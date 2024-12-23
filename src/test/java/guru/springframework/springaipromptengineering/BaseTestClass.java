@@ -2,7 +2,7 @@ package guru.springframework.springaipromptengineering;
 
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.PromptTemplate;
-import org.springframework.ai.openai.OpenAiChatClient;
+import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -13,7 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class BaseTestClass {
 
     @Autowired
-    OpenAiChatClient openAiChatClient;
+    OpenAiChatModel openAiChatClient;
 
     String chat(String prompt) {
         PromptTemplate promptTemplate = new PromptTemplate(prompt);

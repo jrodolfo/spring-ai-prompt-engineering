@@ -1,7 +1,6 @@
 package guru.springframework.springaipromptengineering;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.ai.chat.ChatResponse;
 import org.springframework.ai.chat.messages.Message;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.PromptTemplate;

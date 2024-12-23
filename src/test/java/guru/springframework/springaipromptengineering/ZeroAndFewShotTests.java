@@ -2,7 +2,7 @@ package guru.springframework.springaipromptengineering;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.ai.autoconfigure.openai.OpenAiChatProperties;
-import org.springframework.ai.chat.ChatResponse;
+import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.PromptTemplate;
 import org.springframework.ai.openai.OpenAiChatOptions;
@@ -55,7 +55,7 @@ public class ZeroAndFewShotTests extends BaseTestClass {
     void zeroShotPromptTestWithModelOptions() {
 
         OpenAiChatOptions openAiChatOptions = new OpenAiChatOptions.Builder(openAiChatProperties.getOptions())
-                .withTemperature(0.1f) //default is 0.7
+                .withTemperature(0.1) //default is 0.7
                 .withModel("gpt-4-turbo-preview")
                 .build();
 
